@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. V. Manikonda - Portfolio</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+   <link rel="stylesheet" href="styles.css">
+    
+     
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-tower-broadcast"></i>
+          </div>
+          Dr. V. Manikonda
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">
+              <i class="fa-solid fa-user"></i>
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#education" class="nav-link">
+              <i class="ri-graduation-cap-line"></i>
+              Education
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#research" class="nav-link">
+              <i class="ri-search-line"></i>
+              Research
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#publications" class="nav-link">
+              <i class="ri-article-line"></i>
+              Publications
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#teaching" class="nav-link">
+              <i class="ri-presentation-line"></i>
+              Teaching
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link contact-btn">
+              <i class="fa-solid fa-envelope"></i>
+              Contact
+            </a>
+          </li>
+        </ul>
+
+        <button class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-overlay" onclick="closeMenu()"></div>
+<section id="about" class="hero-section">
+        <!-- Animated background pattern -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Content Container -->
+        <div class="hero-container">
+            <div class="hero-content">
+                
+                <!-- Hero Content -->
+                <div class="hero-space">
+                    
+                    <!-- Header -->
+                    <div class="hero-space">
+                        
+                        
+                        <h1 class="main-title">
+                            Dr. Venkateswararao<br>
+                            <span class="name-highlight">Manikonda</span>
+                        </h1>
+                        
+                        <p class="subtitle">Associate Professor</p>
+                    </div>
+
+                    <!-- Professional Description -->
+                    <div class="description">
+                        <p>
+                            I am an Associate Professor with strong experience in 
+                            <span class="highlight">Microwave and Antenna Engineering</span>. 
+                            Skilled in using <span class="highlight">FEKO, CST Microwave Studio, HFSS, COMSOL</span>, and 
+                            <span class="highlight">RF & Microwave Design</span> tools. 
+                            I hold a <span class="text-bold">Ph.D. in Metamaterial Antennas from KL University</span> and an 
+                            <span class="text-bold">M.Tech in Microwave and Communication Engineering from PVPSIT</span>.
+                        </p>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="cta-buttons">
+                        <a href="#publications" class="btn btn-primary" onclick="scrollToSection('publications')">
+                            <i class="fas fa-external-link-alt"></i>
+                            Explore Publications
+                        </a>
+                        
+                        <a href="#contact" class="btn btn-outline" onclick="scrollToSection('contact')">
+                            <i class="fas fa-envelope"></i>
+                            Get in Touch
+                        </a>
+                    </div>
+
+                    <!-- Specializations Tags -->
+                    <div class="specializations">
+                        <span class="tag">Metamaterials</span>
+                        <span class="tag">MIMO Antennas</span>
+                        <span class="tag">RF Design</span>
+                        <span class="tag">EM Simulation</span>
+                        <span class="tag">Microwave Engineering</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-wheel">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scroll functionality
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Add click event listeners to buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('[onclick]');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const href = this.getAttribute('href');
+                    if (href && href.startsWith('#')) {
+                        scrollToSection(href.substring(1));
+                    }
+                });
+            });
+        });
+    </script>
+    <div class="content">
+      <!-- Education Section -->
+      <section id="education" class="section">
+        <div class="container">
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">
+            Academic foundation in advanced electromagnetic theory and microwave
+            engineering
+          </p>
+
+          <div class="education-cards">
+            <div class="education-card highlight">
+              <div class="education-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="education-content">
+                <div class="education-header">
+                  <h3>Ph.D. in Metamaterial Antennas</h3>
+                  <span class="education-badge">Doctoral Research</span>
+                </div>
+                <p class="institution">KL University</p>
+                <p class="description">
+                  Advanced research in metamaterial antenna design and
+                  electromagnetic wave manipulation
+                </p>
+              </div>
+            </div>
+
+            <div class="education-card">
+              <div class="education-icon">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="education-content">
+                <h3>Master of Technology (M.Tech)</h3>
+                <p class="specialization">
+                  Microwave and Communication Engineering
+                </p>
+                <p class="institution">
+                  Prasad V Potluri Siddhartha Institute of Technology
+                </p>
+                <p class="description">
+                  Specialized coursework in microwave engineering, communication
+                  systems, and RF design
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="academic-excellence">
+            <h3>Academic Excellence</h3>
+            <div class="excellence-grid">
+              <div class="excellence-item">
+                <h4>Ph.D.</h4>
+                <p>Metamaterial Antenna Research</p>
+              </div>
+              <div class="excellence-item">
+                <h4>M.Tech</h4>
+                <p>Microwave Engineering</p>
+              </div>
+              <div class="excellence-item">
+                <h4>Research</h4>
+                <p>Advanced EM Studies</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research Section -->
+      <section id="research" class="section research-section">
+        <div class="container">
+          <h2 class="section-title">Research Interests</h2>
+          <p class="section-subtitle">
+            Focused on advancing electromagnetic theory and its applications in
+            modern wireless communication systems
+          </p>
+
+          <!-- Research Areas Grid -->
+          <div class="research-grid">
+            <div class="research-card">
+              <div class="research-card-header">
+                <div class="research-icon">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="research-title">Metamaterials</h3>
+              </div>
+              <p class="research-description">
+                Advanced metamaterial structures for electromagnetic wave
+                manipulation and antenna applications
+              </p>
+              <div class="research-highlights">
+                <p class="highlights-label">Key Areas:</p>
+                <div class="highlights-badges">
+                  <span class="research-badge">Negative Index Materials</span>
+                  <span class="research-badge"
+                    >Frequency Selective Surfaces</span
+                  >
+                  <span class="research-badge">Electromagnetic Bandgap</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="research-card">
+              <div class="research-card-header">
+                <div class="research-icon">
+                  <i class="fa-solid fa-tower-broadcast"></i>
+                </div>
+                <h3 class="research-title">MIMO Antennas</h3>
+              </div>
+              <p class="research-description">
+                Multi-input multi-output antenna systems for enhanced wireless
+                communication performance
+              </p>
+              <div class="research-highlights">
+                <p class="highlights-label">Key Areas:</p>
+                <div class="highlights-badges">
+                  <span class="research-badge">Diversity Techniques</span>
+                  <span class="research-badge">Isolation Enhancement</span>
+                  <span class="research-badge">Compact Designs</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="research-card">
+              <div class="research-card-header">
+                <div class="research-icon">
+                  <i class="fa-solid fa-wave-square"></i>
+                </div>
+                <h3 class="research-title">RF & Microwave Design</h3>
+              </div>
+              <p class="research-description">
+                High-frequency circuit design and optimization for wireless
+                communication systems
+              </p>
+              <div class="research-highlights">
+                <p class="highlights-label">Key Areas:</p>
+                <div class="highlights-badges">
+                  <span class="research-badge">Filter Design</span>
+                  <span class="research-badge">Impedance Matching</span>
+                  <span class="research-badge">Power Amplifiers</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="research-card">
+              <div class="research-card-header">
+                <div class="research-icon">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+                <h3 class="research-title">EM Simulation Tools</h3>
+              </div>
+              <p class="research-description">
+                Expertise in advanced electromagnetic simulation software for
+                antenna and circuit analysis
+              </p>
+              <div class="research-highlights">
+                <p class="highlights-label">Key Areas:</p>
+                <div class="highlights-badges">
+                  <span class="research-badge">CST Microwave Studio</span>
+                  <span class="research-badge">FEKO</span>
+                  <span class="research-badge">COMSOL Multiphysics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Tools & Software Section -->
+          <div class="research-tools">
+            <div class="tools-header">
+              <h3 class="tools-title">Research Tools & Software Expertise</h3>
+              <p class="tools-subtitle">
+                Proficient in industry-standard electromagnetic simulation and
+                design tools
+              </p>
+            </div>
+
+            <div class="tools-grid">
+              <div class="tool-item">
+                <div class="tool-content">
+                  <h4 class="tool-name">CST Microwave Studio</h4>
+                  <p class="tool-category">EM Simulation</p>
+                </div>
+                <div class="tool-indicator"></div>
+              </div>
+
+              <div class="tool-item">
+                <div class="tool-content">
+                  <h4 class="tool-name">FEKO</h4>
+                  <p class="tool-category">Antenna Modeling</p>
+                </div>
+                <div class="tool-indicator"></div>
+              </div>
+
+              <div class="tool-item">
+                <div class="tool-content">
+                  <h4 class="tool-name">COMSOL Multiphysics</h4>
+                  <p class="tool-category">Physics Simulation</p>
+                </div>
+                <div class="tool-indicator"></div>
+              </div>
+
+              <div class="tool-item">
+                <div class="tool-content">
+                  <h4 class="tool-name">MATLAB</h4>
+                  <p class="tool-category">Analysis</p>
+                </div>
+                <div class="tool-indicator"></div>
+              </div>
+
+              <div class="tool-item">
+                <div class="tool-content">
+                  <h4 class="tool-name">ADS</h4>
+                  <p class="tool-category">RF Design</p>
+                </div>
+                <div class="tool-indicator"></div>
+              </div>
+
+              <div class="tool-item">
+                <div class="tool-content">
+                  <h4 class="tool-name">HFSS</h4>
+                  <p class="tool-category">3D EM Simulation</p>
+                </div>
+                <div class="tool-indicator"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Publications Section -->
+      <section id="publications" class="section publications-section">
+        <div class="container">
+          <h2 class="section-title">Publications & Research</h2>
+          <p class="section-subtitle">
+            Extensive research portfolio with over 45 publications in reputed
+            SCI and Scopus indexed journals
+          </p>
+
+          <!-- Publication Stats -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-value">45+</div>
+              <div class="stat-label">Total Publications</div>
+              <div class="stat-description">SCI/Scopus Journals</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">4</div>
+              <div class="stat-label">Research Areas</div>
+              <div class="stat-description">Primary Focus Areas</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">High Impact</div>
+              <div class="stat-label">Citations</div>
+              <div class="stat-description">Quality Research</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">International</div>
+              <div class="stat-label">Collaboration</div>
+              <div class="stat-description">Global Network</div>
+            </div>
+          </div>
+
+          <!-- Research Profiles -->
+          <div class="profiles-card">
+            <h3
+              class="section-title"
+              style="font-size: 1.5rem; margin-bottom: 1.5rem"
+            >
+              Research Profiles & Academic Networks
+            </h3>
+            <div class="profiles-grid">
+              <a
+                href="https://scholar.google.com/citations?user=AORQUpEAAAAJ&hl=en&oi=sra"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="profile-item profile-google"
+              >
+                <div class="profile-content">
+                  <i class="fa-solid fa-book profile-icon"></i>
+                  <div class="profile-info">
+                    <div class="profile-name">Google Scholar</div>
+                    <div class="profile-description">
+                      Complete publication list and citation metrics
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-external-link external-link"></i>
+                </div>
+              </a>
+
+              <a
+                href="https://www.researchgate.net/profile/Venkateswararao-Manikonda"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="profile-item profile-researchgate"
+              >
+                <div class="profile-content">
+                  <i class="fa-solid fa-users profile-icon"></i>
+                  <div class="profile-info">
+                    <div class="profile-name">ResearchGate</div>
+                    <div class="profile-description">
+                      Research collaboration and networking
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-external-link external-link"></i>
+                </div>
+              </a>
+
+              <a
+                href="https://www.scopus.com/authid/detail.uri?authorId=57219347758"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="profile-item profile-scopus"
+              >
+                <div class="profile-content">
+                  <i class="fa-solid fa-award profile-icon"></i>
+                  <div class="profile-info">
+                    <div class="profile-name">Scopus Author ID</div>
+                    <div class="profile-description">
+                      Scopus indexed publications and h-index
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-external-link external-link"></i>
+                </div>
+              </a>
+
+              <a
+                href="https://www.semanticscholar.org/author/Manikonda-Venkateswararao/2280734562"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="profile-item profile-semantic"
+              >
+                <div class="profile-content">
+                  <i class="fa-solid fa-chart-line profile-icon"></i>
+                  <div class="profile-info">
+                    <div class="profile-name">Semantic Scholar</div>
+                    <div class="profile-description">
+                      AI-powered research insights and metrics
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-external-link external-link"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Recent Publications -->
+          <div class="publications-card">
+            <div class="publications-header">
+              <h3 class="publications-title">Recent Publications</h3>
+              <a href="https://scholar.google.com/citations?user=AORQUpEAAAAJ&hl=en&oi=sra"  target="_blank" class="view-all-btn">
+                <i class="fa-solid fa-book"></i>
+                View All Publications
+              </a>
+            </div>
+
+            <div class="publications-list">
+              <div class="publication-item">
+                <h4 class="publication-title">
+                  Metamaterial-Based Antenna Design for 5G Applications
+                </h4>
+                <p class="publication-journal">
+                  IEEE Transactions on Antennas and Propagation
+                </p>
+                <div class="publication-meta">
+                  <span class="publication-type">SCI Journal</span>
+                  <span class="publication-year">2024</span>
+                </div>
+              </div>
+
+              <div class="publication-item">
+                <h4 class="publication-title">
+                  MIMO Antenna Systems with Enhanced Isolation Techniques
+                </h4>
+                <p class="publication-journal">
+                  International Journal of RF and Microwave Engineering
+                </p>
+                <div class="publication-meta">
+                  <span class="publication-type">Scopus Journal</span>
+                  <span class="publication-year">2023</span>
+                </div>
+              </div>
+
+              <div class="publication-item">
+                <h4 class="publication-title">
+                  Electromagnetic Bandgap Structures for Antenna Applications
+                </h4>
+                <p class="publication-journal">
+                  Progress in Electromagnetics Research
+                </p>
+                <div class="publication-meta">
+                  <span class="publication-type">SCI Journal</span>
+                  <span class="publication-year">2023</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="publication-note">
+              <p class="publication-note-text">
+                <span class="publication-note-bold"
+                  >Complete publication list</span
+                >
+                available on research profile platforms above
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Teaching Section -->
+      <section id="teaching" class="section teaching-section">
+        <div class="container">
+          <h2 class="section-title">Teaching & Mentorship</h2>
+          <p class="section-subtitle">
+            Passionate about education and mentoring the next generation of engineers in electromagnetic theory and modern communication systems
+          </p>
+
+          <!-- Teaching Activities -->
+          <div class="teaching-activities">
+            <div class="activity-card">
+              <div class="activity-icon">
+                <i class="fa-solid fa-chalkboard-teacher"></i>
+              </div>
+              <div class="activity-content">
+                <h3>Teaching Excellence</h3>
+                <p>Delivering comprehensive courses in electromagnetic theory, antenna design, and communication systems</p>
+              </div>
+            </div>
+
+            <div class="activity-card">
+              <div class="activity-icon">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div class="activity-content">
+                <h3>Research Mentorship</h3>
+                <p>Guiding Ph.D. and M.Tech students in advanced research projects and thesis work</p>
+              </div>
+            </div>
+
+            <div class="activity-card">
+              <div class="activity-icon">
+                <i class="fa-solid fa-flask"></i>
+              </div>
+              <div class="activity-content">
+                <h3>Laboratory Supervision</h3>
+                <p>Overseeing practical sessions and experimental work in electromagnetic laboratories</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Courses Taught -->
+          <div class="courses-card">
+            <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1.5rem">
+              Courses Taught
+            </h3>
+            <div class="courses-grid">
+              <div class="course-item">
+                <div class="course-icon">
+                  <i class="fa-solid fa-wave-square"></i>
+                </div>
+                <div class="course-content">
+                  <h4>Electromagnetic Theory</h4>
+                  <p>Maxwell's equations, wave propagation, and field theory</p>
+                  <div class="course-level">Graduate Level</div>
+                  <div class="course-lab">
+                    <h5>Laboratory Facilities:</h5>
+                    <div class="lab-features">
+                      <span class="lab-feature">Network Analyzers</span>
+                      <span class="lab-feature">Anechoic Chamber</span>
+                      <span class="lab-feature">Field Probes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-item">
+                <div class="course-icon">
+                  <i class="fa-solid fa-tower-broadcast"></i>
+                </div>
+                <div class="course-content">
+                  <h4>Antenna Theory & Design</h4>
+                  <p>Antenna fundamentals, design principles, and modern applications</p>
+                  <div class="course-level">Graduate Level</div>
+                  <div class="course-lab">
+                    <h5>Laboratory Facilities:</h5>
+                    <div class="lab-features">
+                      <span class="lab-feature">Network Analyzers</span>
+                      <span class="lab-feature">Anechoic Chamber</span>
+                      <span class="lab-feature">Field Probes</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-item">
+                <div class="course-icon">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+                <div class="course-content">
+                  <h4>Electronic Devices and Circuits</h4>
+                  <p>Semiconductor devices, circuit analysis, and electronic systems</p>
+                  <div class="course-level">Undergraduate Level</div>
+                  <div class="course-lab">
+                    <h5>Laboratory Facilities:</h5>
+                    <div class="lab-features">
+                      <span class="lab-feature">Oscilloscopes</span>
+                      <span class="lab-feature">Function Generators</span>
+                      <span class="lab-feature">Power Supplies</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-item">
+                <div class="course-icon">
+                  <i class="fa-solid fa-memory"></i>
+                </div>
+                <div class="course-content">
+                  <h4>Digital Electronics</h4>
+                  <p>Digital logic design, combinational and sequential circuits</p>
+                  <div class="course-level">Undergraduate Level</div>
+                  <div class="course-lab">
+                    <h5>Laboratory Facilities:</h5>
+                    <div class="lab-features">
+                      <span class="lab-feature">FPGA Boards</span>
+                      <span class="lab-feature">Logic Analyzers</span>
+                      <span class="lab-feature">Development Kits</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="course-item">
+                <div class="course-icon">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+                <div class="course-content">
+                  <h4>Artificial Neural Networks</h4>
+                  <p>Neural network architectures, learning algorithms, and applications</p>
+                  <div class="course-level">Graduate Level</div>
+                </div>
+              </div>
+
+              <div class="course-item">
+                <div class="course-icon">
+                  <i class="fa-solid fa-satellite"></i>
+                </div>
+                <div class="course-content">
+                  <h4>Microwave Engineering</h4>
+                  <p>High-frequency circuits, transmission lines, and RF systems</p>
+                  <div class="course-level">Graduate Level</div>
+                  <div class="course-lab">
+                    <h5>Laboratory Facilities:</h5>
+                    <div class="lab-features">
+                      <span class="lab-feature">Network Analyzers</span>
+                      <span class="lab-feature">Signal Generators</span>
+                      <span class="lab-feature">Spectrum Analyzers</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Supervision -->
+          <div class="supervision-card">
+            <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1.5rem">
+              Research Supervision
+            </h3>
+            <div class="supervision-stats">
+              <div class="supervision-stat">
+                <div class="stat-number">6+</div>
+                <div class="stat-label">Years</div>
+                <div class="stat-description">Experience</div>
+              </div>
+              <div class="supervision-stat">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">M.Tech Projects</div>
+                <div class="stat-description">Completed</div>
+              </div>
+              <div class="supervision-stat">
+                <div class="stat-number">30+</div>
+                <div class="stat-label">B.Tech Projects</div>
+                <div class="stat-description">Mentored</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teaching Philosophy -->
+          <div class="philosophy-card">
+            <h3 class="section-title" style="font-size: 1.5rem; margin-bottom: 1.5rem">
+              Teaching Philosophy
+            </h3>
+            <div class="philosophy-content">
+              <p>
+                "Education is not just about imparting knowledge, but about inspiring curiosity and fostering innovation. 
+                I believe in creating an interactive learning environment where theoretical concepts are strengthened through 
+                practical applications and real-world problem-solving."
+              </p>
+              <div class="philosophy-principles">
+                <div class="principle-item">
+                  <i class="fa-solid fa-lightbulb"></i>
+                  <span>Innovative Teaching Methods</span>
+                </div>
+                <div class="principle-item">
+                  <i class="fa-solid fa-hands-helping"></i>
+                  <span>Hands-on Learning</span>
+                </div>
+                <div class="principle-item">
+                  <i class="fa-solid fa-rocket"></i>
+                  <span>Research-Oriented Approach</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    </div>
+<section id="contact" class="contact-section">
+      <div class="container">
+        <div class="max-width">
+          <!-- Section Header -->
+          <div class="section-header">
+            <h2 class="section-title">Contact & Collaboration</h2>
+            <p class="section-subtitle">
+              Open to research collaborations, academic partnerships, and
+              consultations in electromagnetic engineering
+            </p>
+          </div>
+
+          <div class="grid grid-2">
+            <!-- Desktop Contact Information -->
+            <div class="contact-info">
+              <!-- Contact Details -->
+              <div class="card desktop-only">
+                <h3 class="card-title">Contact Information</h3>
+                <div>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                      <p class="contact-label">Email</p>
+                      <a
+                        href="mailto:dr_mvr@pace.ac.in"
+                        class="contact-value"
+                      >
+                        dr_mvr@pace.ac.in
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                      <p class="contact-label">Personal Phone</p>
+                      <a href="tel:+91XXXXXXXXXX" class="contact-value">
+                        +91 94412 41642
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                      <p class="contact-label">Office Address</p>
+                      <span class="contact-value">
+                        NH-5, near Valluramma Temple, Ongole, Andhra Pradesh 523272
+PACE Institute of Technology & Sciences (Autonomous), address
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                      <p class="contact-label">Office Hours</p>
+                      <span class="contact-value">
+                        Mon-Sat: 9:00 AM - 5:00 PM
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Research Profiles -->
+              <div class="card desktop-only">
+                <h3 class="card-title">Research Profiles</h3>
+                <div class="research-links">
+                  <a
+                    href="https://scholar.google.com/citations?user=AORQUpEAAAAJ&hl=en&oi=sra"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="research-link"
+                  >
+                    <span>Google Scholar</span>
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://www.researchgate.net/profile/Venkateswararao-Manikonda"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="research-link"
+                  >
+                    <span>ResearchGate</span>
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://www.semanticscholar.org/author/Manikonda-Venkateswararao/2280734562"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="research-link"
+                  >
+                    <span>Semantic Scholar</span>
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://www.scopus.com/authid/detail.uri?authorId=57219347758"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="research-link"
+                  >
+                    <span>Scopus</span>
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Collaboration Areas -->
+              <div class="card collaboration-card desktop-only">
+                <h3 class="card-title">Collaboration Interests</h3>
+                <ul class="collaboration-list">
+                  <li class="collaboration-item">
+                    <div class="collaboration-bullet"></div>
+                    <span>Joint research projects in metamaterials</span>
+                  </li>
+                  <li class="collaboration-item">
+                    <div class="collaboration-bullet"></div>
+                    <span>MIMO antenna system development</span>
+                  </li>
+                  <li class="collaboration-item">
+                    <div class="collaboration-bullet"></div>
+                    <span>Industrial consulting in RF design</span>
+                  </li>
+                  <li class="collaboration-item">
+                    <div class="collaboration-bullet"></div>
+                    <span>Academic exchange programs</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Mobile Tabbed Interface (768px and below) -->
+            <div class="mobile-tabs">
+              <div class="tab-buttons">
+                <button
+                  class="tab-button active"
+                  onclick="switchTab('contact')"
+                >
+                  <i class="fas fa-address-card"></i> Contact
+                </button>
+                <button class="tab-button" onclick="switchTab('research')">
+                  <i class="fas fa-graduation-cap"></i> Research
+                </button>
+                <button class="tab-button" onclick="switchTab('message')">
+                  <i class="fas fa-envelope"></i> Message
+                </button>
+              </div>
+
+              <!-- Contact Tab -->
+              <div id="contact-tab" class="tab-content active">
+                <div class="card">
+                  <div class="contact-item-compact">
+                    <div class="contact-icon-compact">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details-compact">
+                      <p class="contact-label-compact">Email</p>
+                      <a
+                        href="mailto:dr_mvr@pace.ac.in"
+                        class="contact-value-compact"
+                      >
+                        dr_mvr@pace.ac.in
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="contact-item-compact">
+                    <div class="contact-icon-compact">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details-compact">
+                      <p class="contact-label-compact">Office Phone</p>
+                      <a href="tel:+91XXXXXXXXXX" class="contact-value-compact">
+                        +91 94412 41642
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="contact-item-compact">
+                    <div class="contact-icon-compact">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details-compact">
+                      <p class="contact-label-compact">Office Address</p>
+                      <span class="contact-value-compact">
+                        Department of ECE, Institute Name, City, State
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="contact-item-compact">
+                    <div class="contact-icon-compact">
+                      <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details-compact">
+                      <p class="contact-label-compact">Office Hours</p>
+                      <span class="contact-value-compact">
+                        Mon-Fri: 10:00 AM - 5:00 PM
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Research Tab -->
+              <div id="research-tab" class="tab-content">
+                <div class="card">
+                  <div class="research-links">
+                    <a
+                      href="https://scholar.google.com/citations?user=AORQUpEAAAAJ&hl=en&oi=sra"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="research-link"
+                    >
+                      <span>Google Scholar</span>
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="https://www.researchgate.net/profile/Venkateswararao-Manikonda"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="research-link"
+                    >
+                      <span>ResearchGate</span>
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="https://www.semanticscholar.org/author/Manikonda-Venkateswararao/2280734562"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="research-link"
+                    >
+                      <span>Semantic Scholar</span>
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="https://www.scopus.com/authid/detail.uri?authorId=57219347758"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="research-link"
+                    >
+                      <span>Scopus</span>
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </div>
+
+                  <div style="margin-top: 20px">
+                    <h4
+                      style="
+                        margin-bottom: 12px;
+                        font-size: 1rem;
+                        color: var(--foreground);
+                      "
+                    >
+                      Collaboration Interests
+                    </h4>
+                    <ul class="collaboration-list">
+                      <li class="collaboration-item">
+                        <div class="collaboration-bullet"></div>
+                        <span>Joint research projects in metamaterials</span>
+                      </li>
+                      <li class="collaboration-item">
+                        <div class="collaboration-bullet"></div>
+                        <span>MIMO antenna system development</span>
+                      </li>
+                      <li class="collaboration-item">
+                        <div class="collaboration-bullet"></div>
+                        <span>Industrial consulting in RF design</span>
+                      </li>
+                      <li class="collaboration-item">
+                        <div class="collaboration-bullet"></div>
+                        <span>Academic exchange programs</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Message Tab -->
+              <div id="message-tab" class="tab-content">
+                <div class="card">
+                  <form>
+                    <div class="form-grid">
+                      <div class="form-group">
+                        <label class="form-label">Name</label>
+                        <input
+                          type="text"
+                          class="form-input"
+                          placeholder="Your full name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input
+                          type="email"
+                          class="form-input"
+                          placeholder=" dr_mvr@pace.ac.in"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label">Institution/Organization</label>
+                      <input
+                        type="text"
+                        class="form-input"
+                        placeholder="Your institution or company"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label">Subject</label>
+                      <input
+                        type="text"
+                        class="form-input"
+                        placeholder="Research collaboration, consultation, etc."
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label class="form-label">Message</label>
+                      <textarea
+                        class="form-textarea"
+                        placeholder="Please describe your inquiry, research interests, or collaboration proposal..."
+                        rows="4"
+                      ></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                      <i class="fas fa-envelope"></i>
+                      Send Message
+                    </button>
+                  </form>
+
+                  <div class="response-time">
+                    <p class="response-time-text">
+                      Response time: Typically within 2-3 business days
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Collapsible Interface (480px and below) -->
+            <div class="mobile-collapsible">
+              <!-- Contact Information Collapsible -->
+              <div
+                class="collapsible-header"
+                onclick="toggleCollapsible('contact-collapsible')"
+              >
+                <h3><i class="fas fa-address-card"></i> Contact Information</h3>
+                <i
+                  class="fas fa-chevron-down collapsible-toggle"
+                  id="contact-toggle"
+                ></i>
+              </div>
+              <div id="contact-collapsible" class="collapsible-content">
+                <div class="contact-item-compact">
+                  <div class="contact-icon-compact">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="contact-details-compact">
+                    <p class="contact-label-compact">Email</p>
+                    <a
+                      href="mailto: dr_mvr@pace.ac.in"
+                      class="contact-value-compact"
+                    >
+                       dr_mvr@pace.ac.in
+                    </a>
+                  </div>
+                </div>
+
+                <div class="contact-item-compact">
+                  <div class="contact-icon-compact">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="contact-details-compact">
+                    <p class="contact-label-compact">Phone</p>
+                    <a href="tel:+91XXXXXXXXXX" class="contact-value-compact">
+                      +91 XXX XXX XXXX
+                    </a>
+                  </div>
+                </div>
+
+                <div class="contact-item-compact">
+                  <div class="contact-icon-compact">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="contact-details-compact">
+                    <p class="contact-label-compact">Address</p>
+                    <span class="contact-value-compact">
+                      Department of ECE, Institute Name, City, State
+                    </span>
+                  </div>
+                </div>
+
+                <div class="contact-item-compact">
+                  <div class="contact-icon-compact">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div class="contact-details-compact">
+                    <p class="contact-label-compact">Office Hours</p>
+                    <span class="contact-value-compact">
+                      Mon-Fri: 10:00 AM - 5:00 PM
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Research Profiles Collapsible -->
+              <div
+                class="collapsible-header"
+                onclick="toggleCollapsible('research-collapsible')"
+              >
+                <h3>
+                  <i class="fas fa-graduation-cap"></i> Research & Collaboration
+                </h3>
+                <i
+                  class="fas fa-chevron-down collapsible-toggle"
+                  id="research-toggle"
+                ></i>
+              </div>
+              <div id="research-collapsible" class="collapsible-content">
+                <div class="research-links">
+                  <a
+                    href="https://scholar.google.com/citations?user=AORQUpEAAAAJ&hl=en&oi=sra"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="research-link"
+                  >
+                    <span>Google Scholar</span>
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://www.researchgate.net/profile/Venkateswararao-Manikonda"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="research-link"
+                  >
+                    <span>ResearchGate</span>
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://www.semanticscholar.org/author/Manikonda-Venkateswararao/2280734562"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="research-link"
+                  >
+                    <span>Semantic Scholar</span>
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://www.scopus.com/authid/detail.uri?authorId=57219347758"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="research-link"
+                  >
+                    <span>Scopus</span>
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                </div>
+
+                <div style="margin-top: 16px">
+                  <h4
+                    style="
+                      margin-bottom: 8px;
+                      font-size: 0.9rem;
+                      color: var(--foreground);
+                    "
+                  >
+                    Collaboration Interests
+                  </h4>
+                  <ul class="collaboration-list">
+                    <li class="collaboration-item">
+                      <div class="collaboration-bullet"></div>
+                      <span>Joint research projects in metamaterials</span>
+                    </li>
+                    <li class="collaboration-item">
+                      <div class="collaboration-bullet"></div>
+                      <span>MIMO antenna system development</span>
+                    </li>
+                    <li class="collaboration-item">
+                      <div class="collaboration-bullet"></div>
+                      <span>Industrial consulting in RF design</span>
+                    </li>
+                    <li class="collaboration-item">
+                      <div class="collaboration-bullet"></div>
+                      <span>Academic exchange programs</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Contact Form Collapsible -->
+              <div
+                class="collapsible-header"
+                onclick="toggleCollapsible('message-collapsible')"
+              >
+                <h3><i class="fas fa-envelope"></i> Send Message</h3>
+                <i
+                  class="fas fa-chevron-down collapsible-toggle"
+                  id="message-toggle"
+                ></i>
+              </div>
+              <div id="message-collapsible" class="collapsible-content">
+                <form>
+                  <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      placeholder="Your full name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-input"
+                      placeholder=" dr_mvr@pace.ac.in"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Subject</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      placeholder="Research collaboration, consultation, etc."
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Message</label>
+                    <textarea
+                      class="form-textarea"
+                      placeholder="Please describe your inquiry..."
+                      rows="4"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="submit-btn">
+                    <i class="fas fa-envelope"></i>
+                    Send Message
+                  </button>
+                </form>
+                <div class="response-time">
+                  <p class="response-time-text">
+                    Response time: Typically within 2-3 business days
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop Contact Form -->
+            <div class="card desktop-only">
+              <h3 class="card-title">Send a Message</h3>
+              <form>
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-input"
+                      placeholder="Your full name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-input"
+                      placeholder=" dr_mvr@pace.ac.in"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Institution/Organization</label>
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Your institution or company"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Research collaboration, consultation, etc."
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Message</label>
+                  <textarea
+                    class="form-textarea"
+                    placeholder="Please describe your inquiry, research interests, or collaboration proposal..."
+                    rows="6"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                  <i class="fas fa-envelope"></i>
+                  Send Message
+                </button>
+              </form>
+
+              <div class="response-time">
+                <p class="response-time-text">
+                  Response time: Typically within 2-3 business days
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<footer>
+      <div class="footer-container">
+        <!-- Desktop Footer -->
+        <div class="footer-grid">
+          <!-- Brand & Description -->
+          <div class="footer-brand">
+            <div class="footer-brand-header">
+              <i class="fas fa-graduation-cap footer-brand-icon"></i>
+              <div>
+                <h3 class="footer-brand-title">Dr. Venkateswararao Manikonda</h3>
+                <p class="footer-brand-subtitle">Associate Professor</p>
+              </div>
+            </div>
+            <p class="footer-description">
+              Advancing electromagnetic engineering through innovative research in metamaterials,
+              MIMO antennas, and RF microwave design. Committed to excellence in teaching and
+              academic collaboration.
+            </p>
+            <a href="mailto: dr_mvr@pace.ac.in" class="footer-email">
+              <i class="fas fa-envelope footer-email-icon"></i>
+              <span> dr_mvr@pace.ac.in</span>
+            </a>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h4 class="footer-section-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#about" class="footer-link" onclick="scrollToSection('about')">About</a></li>
+              <li><a href="#education" class="footer-link" onclick="scrollToSection('education')">Education</a></li>
+              <li><a href="#research" class="footer-link" onclick="scrollToSection('research')">Research</a></li>
+              <li><a href="#publications" class="footer-link" onclick="scrollToSection('publications')">Publications</a></li>
+              <li><a href="#teaching" class="footer-link" onclick="scrollToSection('teaching')">Teaching</a></li>
+              <li><a href="#contact" class="footer-link" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Research Profiles -->
+          <div class="footer-section">
+            <h4 class="footer-section-title">Research Profiles</h4>
+            <ul class="footer-links">
+              <li>
+                <a href="https://scholar.google.com/citations?user=AORQUpEAAAAJ&hl=en&oi=sra" target="_blank" rel="noopener noreferrer" class="footer-link footer-external-link">
+                  <span>Google Scholar</span>
+                  <i class="fas fa-external-link-alt footer-external-icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.researchgate.net/profile/Venkateswararao-Manikonda" target="_blank" rel="noopener noreferrer" class="footer-link footer-external-link">
+                  <span>ResearchGate</span>
+                  <i class="fas fa-external-link-alt footer-external-icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.semanticscholar.org/author/Manikonda-Venkateswararao/2280734562" target="_blank" rel="noopener noreferrer" class="footer-link footer-external-link">
+                  <span>Semantic Scholar</span>
+                  <i class="fas fa-external-link-alt footer-external-icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=57219347758" target="_blank" rel="noopener noreferrer" class="footer-link footer-external-link">
+                  <span>Scopus</span>
+                  <i class="fas fa-external-link-alt footer-external-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Research Highlights -->
+        <div class="footer-stats">
+          <div class="footer-stats-grid">
+            <div class="footer-stat">
+              <div class="footer-stat-number">45+</div>
+              <div class="footer-stat-label">Publications</div>
+            </div>
+            <div class="footer-stat">
+              <div class="footer-stat-number">PhD</div>
+              <div class="footer-stat-label">Metamaterials</div>
+            </div>
+            <div class="footer-stat">
+              <div class="footer-stat-number">M.Tech</div>
+              <div class="footer-stat-label">Microwave</div>
+            </div>
+            <div class="footer-stat">
+              <div class="footer-stat-number">Expert</div>
+              <div class="footer-stat-label">EM Simulation</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+          <div class="footer-bottom-flex">
+            <p class="footer-copyright">
+              © <span id="currentYear">2024</span> Dr. Venkateswararao Manikonda. All rights reserved.
+            </p>
+            <div class="footer-tagline">
+              <span>Research Excellence</span>
+              <span class="footer-tagline-separator">•</span>
+              <span>Academic Innovation</span>
+              <span class="footer-tagline-separator">•</span>
+              <span>Global Collaboration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Footer -->
+      <div class="footer-mobile">
+        <div class="footer-mobile-compact">
+          <div class="footer-mobile-brand">
+            <div class="footer-mobile-title">Dr. Venkateswararao Manikonda</div>
+            <div class="footer-mobile-subtitle">Associate Professor</div>
+            <a href="mailto: dr_mvr@pace.ac.in" class="footer-mobile-email">
+              <i class="fas fa-envelope"></i>
+              <span> dr_mvr@pace.ac.in</span>
+            </a>
+          </div>
+
+          <!-- Social Media Icons -->
+          <div class="footer-social-icons">
+            <a href="mailto: dr_mvr@pace.ac.in" class="footer-social-icon email" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/+919441241642?text=Hi%20sir" class="footer-social-icon whatsapp" title="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://linkedin.com/in/dr-vmanikonda" target="_blank" class="footer-social-icon linkedin" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://youtube.com/@drvmanikonda" target="_blank" class="footer-social-icon youtube" title="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+
+          <!-- Quick Stats -->
+          <div class="footer-mobile-stats">
+            <div class="footer-mobile-stat">
+              <span class="footer-mobile-stat-number">45+</span>
+              <span class="footer-mobile-stat-label">Papers</span>
+            </div>
+            <div class="footer-mobile-stat">
+              <span class="footer-mobile-stat-number">PhD</span>
+              <span class="footer-mobile-stat-label">Meta</span>
+            </div>
+            <div class="footer-mobile-stat">
+              <span class="footer-mobile-stat-number">M.Tech</span>
+              <span class="footer-mobile-stat-label">Micro</span>
+            </div>
+            <div class="footer-mobile-stat">
+              <span class="footer-mobile-stat-number">Expert</span>
+              <span class="footer-mobile-stat-label">EM</span>
+            </div>
+          </div>
+
+          <!-- Copyright -->
+          <div class="footer-mobile-copyright">
+            © <span id="currentYearMobile">2025</span> Dr. Venkateswararao Manikonda
+          </div>
+          <div class="footer-mobile-tagline">
+            <span>Research Excellence</span>
+            <span>•</span>
+            <span>Academic Innovation</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Tab switching functionality
+      function switchTab(tabName) {
+        // Hide all tab contents
+        document.querySelectorAll(".tab-content").forEach((content) => {
+          content.classList.remove("active");
+        });
+
+        // Remove active class from all tab buttons
+        document.querySelectorAll(".tab-button").forEach((button) => {
+          button.classList.remove("active");
+        });
+
+        // Show selected tab content
+        document.getElementById(tabName + "-tab").classList.add("active");
+
+        // Add active class to clicked button
+        event.target.classList.add("active");
+      }
+
+      // Collapsible functionality
+      function toggleCollapsible(id) {
+        const content = document.getElementById(id);
+        const toggle = document.getElementById(
+          id.replace("-collapsible", "-toggle")
+        );
+
+        if (content.classList.contains("active")) {
+          content.classList.remove("active");
+          toggle.classList.remove("active");
+        } else {
+          // Close all other collapsibles
+          document.querySelectorAll(".collapsible-content").forEach((item) => {
+            item.classList.remove("active");
+          });
+          document.querySelectorAll(".collapsible-toggle").forEach((item) => {
+            item.classList.remove("active");
+          });
+
+          // Open clicked collapsible
+          content.classList.add("active");
+          toggle.classList.add("active");
+        }
+      }
+
+      // Auto-open first collapsible on mobile
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.innerWidth <= 480) {
+          const firstCollapsible = document.getElementById(
+            "contact-collapsible"
+          );
+          const firstToggle = document.getElementById("contact-toggle");
+          if (firstCollapsible && firstToggle) {
+            firstCollapsible.classList.add("active");
+            firstToggle.classList.add("active");
+          }
+        }
+      });
+
+      // Handle window resize
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 480) {
+          // Close all collapsibles on larger screens
+          document.querySelectorAll(".collapsible-content").forEach((item) => {
+            item.classList.remove("active");
+          });
+          document.querySelectorAll(".collapsible-toggle").forEach((item) => {
+            item.classList.remove("active");
+          });
+        }
+      });
+
+      // Footer functionality
+      function scrollToSection(sectionId) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+
+      // Set current year
+      document.addEventListener('DOMContentLoaded', function() {
+        const currentYear = new Date().getFullYear();
+        const yearElement = document.getElementById('currentYear');
+        const yearElementMobile = document.getElementById('currentYearMobile');
+        if (yearElement) {
+          yearElement.textContent = currentYear;
+        }
+        if (yearElementMobile) {
+          yearElementMobile.textContent = currentYear;
+        }
+      });
+    </script>
+    <script>
+      // Tab switching functionality
+      function switchTab(tabName) {
+        // Hide all tab contents
+        document.querySelectorAll(".tab-content").forEach((content) => {
+          content.classList.remove("active");
+        });
+
+        // Remove active class from all tab buttons
+        document.querySelectorAll(".tab-button").forEach((button) => {
+          button.classList.remove("active");
+        });
+
+        // Show selected tab content
+        document.getElementById(tabName + "-tab").classList.add("active");
+
+        // Add active class to clicked button
+        event.target.classList.add("active");
+      }
+
+      // Collapsible functionality
+      function toggleCollapsible(id) {
+        const content = document.getElementById(id);
+        const toggle = document.getElementById(
+          id.replace("-collapsible", "-toggle")
+        );
+
+        if (content.classList.contains("active")) {
+          content.classList.remove("active");
+          toggle.classList.remove("active");
+        } else {
+          // Close all other collapsibles
+          document.querySelectorAll(".collapsible-content").forEach((item) => {
+            item.classList.remove("active");
+          });
+          document.querySelectorAll(".collapsible-toggle").forEach((item) => {
+            item.classList.remove("active");
+          });
+
+          // Open clicked collapsible
+          content.classList.add("active");
+          toggle.classList.add("active");
+        }
+      }
+
+      // Auto-open first collapsible on mobile
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.innerWidth <= 480) {
+          const firstCollapsible = document.getElementById(
+            "contact-collapsible"
+          );
+          const firstToggle = document.getElementById("contact-toggle");
+          if (firstCollapsible && firstToggle) {
+            firstCollapsible.classList.add("active");
+            firstToggle.classList.add("active");
+          }
+        }
+      });
+
+      // Handle window resize
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 480) {
+          // Close all collapsibles on larger screens
+          document.querySelectorAll(".collapsible-content").forEach((item) => {
+            item.classList.remove("active");
+          });
+          document.querySelectorAll(".collapsible-toggle").forEach((item) => {
+            item.classList.remove("active");
+          });
+        }
+      });
+    </script>
+    <script>
+      function toggleMenu() {
+        const navMenu = document.querySelector(".nav-menu");
+        const hamburger = document.querySelector(".hamburger");
+        const mobileOverlay = document.querySelector(".mobile-overlay");
+
+        navMenu.classList.toggle("active");
+        hamburger.classList.toggle("active");
+        mobileOverlay.classList.toggle("active");
+
+        // Prevent body scroll when menu is open
+        document.body.style.overflow = navMenu.classList.contains("active")
+          ? "hidden"
+          : "auto";
+      }
+
+      function closeMenu() {
+        const navMenu = document.querySelector(".nav-menu");
+        const hamburger = document.querySelector(".hamburger");
+        const mobileOverlay = document.querySelector(".mobile-overlay");
+
+        navMenu.classList.remove("active");
+        hamburger.classList.remove("active");
+        mobileOverlay.classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+
+      // Close menu when clicking on a nav link (mobile)
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          if (window.innerWidth <= 768) {
+            closeMenu();
+          }
+        });
+      });
+
+      // Close menu when window is resized to desktop
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+          closeMenu();
+        }
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            const navbarHeight = document.querySelector(".navbar").offsetHeight;
+            const targetPosition = target.offsetTop - navbarHeight;
+
+            window.scrollTo({
+              top: targetPosition,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Add scroll effect to navbar
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.style.backgroundColor = "rgba(255, 255, 255, 0.95)";
+          navbar.style.backdropFilter = "blur(10px)";
+        } else {
+          navbar.style.backgroundColor = "#ffffff";
+          navbar.style.backdropFilter = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
+          
+  </body>
+</html>
