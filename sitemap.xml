@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  
+  <!-- Main Pages -->
+  <url>
+    <loc>https://drvenkateswararao.com/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://drvenkateswararao.com/assets/images/profile.jpg</image:loc>
+      <image:title>Dr. M Venkateswara Rao - Assistant Professor</image:title>
+      <image:caption>Dr. M Venkateswara Rao, Assistant Professor specializing in RF Engineering and Microwave Technologies</image:caption>
+    </image:image>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/GcttgRF2k_c/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Advanced Microwave Lab - CST Microwave Studio</video:title>
+      <video:description>Educational video on advanced microwave laboratory techniques using CST Microwave Studio</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=GcttgRF2k_c</video:content_loc>
+      <video:duration>600</video:duration>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://img.youtube.com/vi/D7SifUmk4oo/maxresdefault.jpg</video:thumbnail_loc>
+      <video:title>Microwave and Radar Engineering</video:title>
+      <video:description>Comprehensive overview of microwave bands and microwave tubes in radar engineering</video:description>
+      <video:content_loc>https://www.youtube.com/watch?v=D7SifUmk4oo</video:content_loc>
+      <video:duration>900</video:duration>
+    </video:video>
+  </url>
+  
+  <!-- Navigation Page -->
+  <url>
+    <loc>https://drvenkateswararao.com/navigation.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Section Anchors for Deep Linking -->
+  <url>
+    <loc>https://drvenkateswararao.com/#about</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://drvenkateswararao.com/#experience</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://drvenkateswararao.com/#research</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://drvenkateswararao.com/#education</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://drvenkateswararao.com/#gallery</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://drvenkateswararao.com/#videos</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://drvenkateswararao.com/#contact</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,56 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://drvenkateswararao.com/sitemap.xml
+
+# Allow indexing of main content
+Allow: /index.html
+Allow: /navigation.html
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Disallow common non-content files
+Disallow: /README.md
+Disallow: /.git/
+Disallow: /.gitignore
+Disallow: /node_modules/
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Crawl delay (optional - be considerate to crawlers)
+Crawl-delay: 1
+
+# Popular search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Social media bots for rich previews
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
